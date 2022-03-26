@@ -1,0 +1,21 @@
+Package: MultiGroupSequential
+Type: Package
+Version: 1.0.0
+Date: 2022-03-31
+Title: Group-Sequential Procedures with Multiple Endpoints
+Description: Provides various testing procedures for group-sequential trials with multiple endpoints. Two sets of procedures are provided.
+Authors@R: c(
+    person(given="Xiaodong", family="Luo", email = "Xiaodong.Luo@sanofi.com", role =c("aut", "cre")),
+    person(given="Hui", family="Quan",  role = "ctb"),
+    person("Sanofi", role = "cph"))
+Depends: R (>= 4.0.0)
+Imports:
+    stats,
+    rpact,
+    gMCP,
+    mvtnorm,
+    OpenMx,
+    hommel
+License: GPL (>= 2)
+RoxygenNote: 7.1.2
+LazyData: true

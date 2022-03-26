@@ -1,0 +1,8 @@
+xm=qnorm(matrix(rep(c(0.03,0.04,0.01),times=4),ncol=3,nrow=4))
+im=matrix(rep(c(0.4,0.8,1),each=4),ncol=3,nrow=4)
+alpham=matrix(0,nrow=4,ncol=3)
+for (i in 1:4){
+  #i=1
+  alpham[i,]=xcspending(alpha=0.025,fractions=im[i,],family="OBF",rho=(i+1)/2)$aseq
+}
+xccalgspsim(xm=xm,alpham=alpham,informationm=im,direction=-1)

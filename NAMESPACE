@@ -1,0 +1,22 @@
+export(xccrit)
+export(xcspending)
+export(xcmaurerbretz)
+export(xccalgsp)
+export(xccalgspsim)
+export(xccalgspsim1)
+export(xcseqgxgs)
+export(crosslist)
+export(hxhommel)
+export(hxhochberg)
+export(xcseqhh)
+export(xcseqhhgs)
+
+importFrom("stats", "pnorm", "qnorm", "quantile", "rnorm")
+#importFrom("gMCP", "BonferroniHolm","rejectNode")
+#importFrom("rpact","gMCP","rJAVA","mvtnorm")
+
+
+
+
+
+
