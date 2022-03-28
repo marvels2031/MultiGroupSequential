@@ -1,0 +1,38 @@
+---
+title: "Introduction to the R Package `MultiGroupSequential`"
+output:
+  minidown::mini_document:
+    framework: sakura
+    theme: default
+    toc: true
+    toc_float: true
+    toc_highlight: true
+    code_folding: "hide"
+    results_folding: "show"
+    tabset: true
+    code_download: true
+    math: "katex"
+vignette: >
+  %\VignetteIndexEntry{Introduction to the R Package `MultiGroupSequential`}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MultiGroupSequential)
+```
+
+We can use the following function "gplus" to calculate the sum of two random numbers 
+```{r eval=TRUE}
+gplus=function(x,y){
+  x+y
+}
+```
+For example, the sum of $x=3$ `r x=3`  and $y=5.5$ `r y=5.5` can be calculated as 'gplus(x,y)' and the result is `r gplus(x,y)`.

@@ -19,3 +19,7 @@ Imports:
 License: GPL (>= 2)
 RoxygenNote: 7.1.2
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
