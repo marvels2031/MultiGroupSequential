@@ -24,7 +24,6 @@ Maintainer: \packageMaintainer{MultiGroupSequential}
 \keyword{group-sequential}
 \keyword{multiple endpoints}
 \seealso{
-Luo (2022)
 }
 
 

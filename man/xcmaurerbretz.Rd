@@ -19,19 +19,17 @@ xcmaurerbretz(xm=qnorm(matrix(rep(c(0.03,0.04,0.01),times=4),ncol=3,nrow=4)),
                     1: (one-sided)reject if test stat is smaller than the critical value;
                     0: (two-sided)reject if the absolute value of the test stat is greater than the critical value}
   \item{graphin}{a graph object generated from gMCP}
-  \item{alpha.low}{default is 1e-10, if allocated alpha is smaller than this number, the corrsponding critical value will be set to infinity}
-  \item{retrospective}{retrospective: 0 (default) only compares the current test statistic with the updated critical value, 1 compares all the test statistics up to the current one with the updated critical values. Even though retrospectively looking at the values are statsitical valid in terms of control of the type-1 error rate, not retrospectively looking at the past comparisons avoids the dilemma of retrospectively inflating the alpha level}
+  \item{alpha.low}{default is 1e-10, if allocated alpha is smaller than this number, the corresponding critical value will be set to infinity}
+  \item{retrospective}{retrospective: 0 (default) only compares the current test statistic with the updated critical value, 1 compares all the test statistics up to the current one with the updated critical values. Even though retrospective looking at the values is statistical valid in terms of control of the type-1 error rate, no retrospective looking at the past comparisons avoids the dilemma of retrospectively increasing the alpha level for the un-rejected hypothesis in the past}
 }
-\details{Let \eqn{\tau_{min}} and \eqn{\tau_{max}} correspond to the minimum follow-up time \code{taumin} and the maximum follow-up time \code{taumax}. Let \eqn{T_f}, \eqn{C}, \eqn{E} and \eqn{R} be the follow-up time, the drop-out time, the study entry time and the total recruitment period(\eqn{R} is the last element of \code{ut}). For type 2 follow-up \eqn{T_f=min(C,\tau_{max})}. For type 3 follow-up, \eqn{T_f=min(R+\tau_{min}-E,\tau_{max})}. For type 4 follow-up, \eqn{T_f=min(R+\tau_{min}-E,\tau_{max},C)}. Let \eqn{f} be the density of \eqn{T_f}. We calculate
-\deqn{\int_0^{\infty} \{at/(1+at)\}f(t)dt.}
-}
-\value{\item{Hrej}{rejcted hypotheses}
-       \item{rejected}{rejcted hypotheses}
-       \item{decisionsm}{rejcted hypotheses}
-       \item{cumdecisionsm}{rejcted hypotheses at each interim}
+\details{}
+\value{\item{Hrej}{rejected hypotheses}
+       \item{rejected}{the index set of rejected hypotheses}
+       \item{decisionsm}{rejection decision for each endpoint (row) at each timepoint (column)}
+       \item{cumdecisionsm}{cumulative rejection decision for each endpoint (row) at each timepoint (column)}
 }
 \author{Xiaodong Luo}
-\note{This provides the calculation for the variance. }
+\note{}
 \examples{
 %library(rJava)
 Sys.setenv(JAVA_HOME="C:/Program Files/Java/jdk-17.0.2/")

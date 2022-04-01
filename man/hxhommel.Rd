@@ -12,7 +12,7 @@ hxhommel(pvalues,alpha,epsilon=1.0e-10,precision=10)
   \item{precision}{precision of the values, obsolete for backward compatibility}
 }
 \details{It turns out [hommel](https://cran.r-project.org/web/packages/hommel/) can handle Hommel procedure with different alpha's for different endpoints, the function 'hxhommel' is just a wrapper function. }
-\value{\item{decisions}{an index of rejected hypoetheses}}
+\value{\item{decisions}{an index of rejected hypotheses}}
 \author{Xiaodong Luo}
 \note{}
 \examples{

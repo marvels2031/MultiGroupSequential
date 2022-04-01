@@ -1,7 +1,7 @@
 \name{xcspending}
 \alias{xcspending}
 \title{Calculate alpha spending}
-\description{This untility function calculates alpha spending}
+\description{This utility function calculates alpha spending}
 \usage{
 xcspending(alpha,fractions=seq(0.2,1,by=0.2),family="OBF",rho=1)
 }
@@ -19,7 +19,7 @@ power: \eqn{\alpha*t^{\rho}}
 \value{\item{aseq}{alpha spending}
 }
 \author{Xiaodong Luo}
-\note{This provides the calculation for the variance. }
+\note{}
 \examples{
 xcspending(alpha=0.025,fractions=seq(0.2,1,by=0.2),family="OBF",rho=1)
 }

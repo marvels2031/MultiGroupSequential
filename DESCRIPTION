@@ -15,7 +15,8 @@ Imports:
     gMCP,
     mvtnorm,
     OpenMx,
-    hommel
+    hommel,
+    minidown
 License: GPL (>= 2)
 RoxygenNote: 7.1.2
 LazyData: true
