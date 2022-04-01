@@ -20,7 +20,7 @@ xcmaurerbretz(xm=qnorm(matrix(rep(c(0.03,0.04,0.01),times=4),ncol=3,nrow=4)),
                     0: (two-sided)reject if the absolute value of the test stat is greater than the critical value}
   \item{graphin}{a graph object generated from gMCP}
   \item{alpha.low}{default is 1e-10, if allocated alpha is smaller than this number, the corresponding critical value will be set to infinity}
-  \item{retrospective}{retrospective: 0 (default) only compares the current test statistic with the updated critical value, 1 compares all the test statistics up to the current one with the updated critical values. Even though retrospective looking at the values is statistical valid in terms of control of the type-1 error rate, no retrospective looking at the past comparisons avoids the dilemma of retrospectively increasing the alpha level for the un-rejected hypothesis in the past}
+  \item{retrospective}{retrospective: 0 (default) only compares the current test statistic with the updated critical value, 1 compares all the test statistics up to the current one with the updated critical values. Even though retrospective looking at the values is statistically valid in terms of control of the type-1 error rate, no retrospective looking at the past comparisons avoids the dilemma of retrospectively increasing the alpha level for the un-rejected hypothesis in the past}
 }
 \details{}
 \value{\item{Hrej}{rejected hypotheses}
