@@ -8,8 +8,8 @@ xccrit(direction=-1,alpha=0.025,informationRates=c(0.4,0.7,1),
   
 }
 \arguments{
-  \item{direction}{-1: (one-sided)reject if test stat is smaller than the critical value;
-                    1: (one-sided)reject if test stat is smaller than the critical value;
+  \item{direction}{-1: (one-sided)reject if test stat is smaller than or equal to the critical value;
+                    1: (one-sided)reject if test stat is greater than or equal to the critical value;
                     0: (two-sided)reject if the absolute value of the test stat is greater than the critical value}
   \item{alpha}{overall familywise error rate}
   \item{informationRates}{information fractions}

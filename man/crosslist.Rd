@@ -9,7 +9,7 @@ crosslist(b=list(a1=c(2,3),a2=c(2,4),a3=c(0,1)))
   \item{b}{A list of lists}
 }
 \details{}
-\value{\item{df}{dataframe consisting all the scenarios row by row}}
+\value{\item{df}{dataframe consisting of all the scenarios row by row}}
 \author{Xiaodong Luo}
 \note{}
 \examples{

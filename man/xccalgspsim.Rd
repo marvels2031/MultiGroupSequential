@@ -14,8 +14,8 @@ xccalgspsim(xm=qnorm(matrix(rep(c(0.03,0.04,0.01),times=2),ncol=3,nrow=2)),
   \item{informationm}{a matrix of information fractions for the statistics \code{xm}}
   \item{r.seed}{random seeds for each endpoints}
   \item{nsample}{number of random samples}
-  \item{direction}{-1: (one-sided)reject if test stat is smaller than the critical value;
-                    1: (one-sided)reject if test stat is smaller than the critical value;
+  \item{direction}{-1: (one-sided)reject if test stat is smaller than or equal to the critical value;
+                    1: (one-sided)reject if test stat is greater than or equal to the critical value;
                     0: (two-sided)reject if the absolute value of the test stat is greater than the critical value}
 }
 \details{}

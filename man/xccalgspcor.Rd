@@ -12,8 +12,8 @@ xccalgspcor(xm=qnorm(c(0.03,0.04,0.01)),
   \item{xm}{a vector of test statistics at each analysis}
   \item{alpham}{a vector of alpha spending for the statistics \code{xm}}
   \item{corrm}{correlation matrix of the statistics \code{xm}}
-  \item{direction}{-1: (one-sided)reject if test stat is smaller than the critical value;
-                    1: (one-sided)reject if test stat is smaller than the critical value;
+  \item{direction}{-1: (one-sided)reject if test stat is smaller than or equal to the critical value;
+                    1: (one-sided)reject if test stat is greater than or equal to the critical value;
                     0: (two-sided)reject if the absolute value of the test stat is greater than the critical value}
   \item{tol}{accuracy tolerance when calculating the quantiles}
 }

@@ -1,7 +1,7 @@
 \name{xcspending}
 \alias{xcspending}
 \title{Calculate alpha spending}
-\description{This utility function calculates alpha spending}
+\description{This utility function calculates alpha spending. Note that the OBF and Pocock spending functions are not the originally proposed ones, they are the modified ones that are closely resemble the original versions. That being said, you might still see some differences}
 \usage{
 xcspending(alpha,fractions=seq(0.2,1,by=0.2),family="OBF",rho=1)
 }
@@ -12,7 +12,7 @@ xcspending(alpha,fractions=seq(0.2,1,by=0.2),family="OBF",rho=1)
   \item{rho}{parameter of the spending function}
 }
 \details{
-%(Modified) OBF: \eqn{2\{1-\Phi(\Phi^{-1}(1-\alpha/2)/t^{\rho/2})\}};
+OBF: \eqn{2\{1-\Phi(\Phi^{-1}(1-\alpha/2)/t^{\rho/2})\}};
 pocock: \eqn{\alpha \log\{1+(e-1)*t\}};
 power: \eqn{\alpha*t^{\rho}}
 }
